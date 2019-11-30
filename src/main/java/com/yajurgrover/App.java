@@ -3,10 +3,6 @@ package com.yajurgrover;
 import java.util.ArrayList;
 import java.util.Map;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     private Map<String, Integer> groceryQuantities;
@@ -32,5 +28,5 @@ public class App
         }
     }
 
-    
+
 }
