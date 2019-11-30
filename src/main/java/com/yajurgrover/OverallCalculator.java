@@ -2,19 +2,17 @@ package com.yajurgrover;
 
 import java.util.*;
 
-public class App 
+public class OverallCalculator 
 {
     private Map<String, Integer> groceryQuantities;
     private Map<String, Double> groceryPrices; 
     private ArrayList<String> groceries;
-    private Integer numOfPeople;
 
-    public App(ArrayList<String> groceries, Map<String, Double> groceryPrices, Integer numPeople)
+    public OverallCalculator(ArrayList<String> groceries, Map<String, Double> groceryPrices)
     {
         this.groceries = groceries;
         this.groceryPrices = groceryPrices;
         this.groceryQuantities = updateGroceryQuantities();
-        this.numOfPeople = numPeople;
     }
 
     // updates groceryQuantities to show how many of each item was bought
