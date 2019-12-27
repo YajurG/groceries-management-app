@@ -11,8 +11,8 @@ public class IndividualCalculator {
         this.name = name;
     }
 
-    public Map<String, Integer> getIndividualQuantities() {
+    /*public Map<String, Integer> getIndividualQuantities() {
         
-    }
+    }*/
 
 }
