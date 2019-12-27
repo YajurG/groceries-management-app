@@ -4,7 +4,7 @@ import java.util.*;
 
 public class IndividualCalculator {
     private String name;
-    //private Map<String, ArrayList<String>>
+    private Map<String, ArrayList<String>> items;
 
 
     public IndividualCalculator(String name) {
