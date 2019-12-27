@@ -2,14 +2,12 @@ package com.yajurgrover;
 
 import java.util.*;
 
-public class OverallCalculator 
-{
+public class OverallCalculator {
     private Map<String, Integer> groceryQuantities;
     private Map<String, Double> groceryPrices; 
     private ArrayList<String> groceries;
 
-    public OverallCalculator(ArrayList<String> groceries, Map<String, Double> groceryPrices)
-    {
+    public OverallCalculator(ArrayList<String> groceries, Map<String, Double> groceryPrices) {
         this.groceries = groceries;
         this.groceryPrices = groceryPrices;
         this.groceryQuantities = updateGroceryQuantities();
@@ -18,8 +16,8 @@ public class OverallCalculator
     // updates groceryQuantities to show how many of each item was bought
     public Map<String, Integer> updateGroceryQuantities() {
         Map<String, Integer> result = new TreeMap<String, Integer>();
-        for (String item : groceries){
-            if (result.containsKey(item)){
+        for (String item : groceries) {
+            if (result.containsKey(item)) {
                 Integer q = result.get(item);
                 q++;
                 result.put(item, q);
@@ -32,7 +30,7 @@ public class OverallCalculator
 
     public double getTotalPrice() {
         double totalPrice = 0.0;
-        for (String item : this.groceryQuantities.keySet()){
+        for (String item : this.groceryQuantities.keySet()) {
             double itemPrice = this.groceryPrices.get(item);
             Integer itemQuantity = this.groceryQuantities.get(item);
             totalPrice += itemPrice * itemQuantity;
